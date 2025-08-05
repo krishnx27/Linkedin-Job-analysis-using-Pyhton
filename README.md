@@ -1,4 +1,3 @@
-# Linkedin-Job-analysis-using-Pyhton
 # LinkedIn Job Insights Analysis
 
 About the Dataset:

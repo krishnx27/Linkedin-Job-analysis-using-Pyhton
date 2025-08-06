@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6d3329e7a20ac67bd70857195367a65a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6d3329e7a20ac67bd70857195367a65a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6d3329e7a20ac67bd70857195367a65a = L.map(
+                "map_6d3329e7a20ac67bd70857195367a65a",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6e1bf7edc6f0c6111d6ceaed1362474f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6e1bf7edc6f0c6111d6ceaed1362474f.addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var circle_marker_7e13b21812f93bc33c3cb66e1d05ddde = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.8, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_4985df67bcdd461bb3e05d9c0c77dacb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_854ad3afa6f564f28ca8974ba2d39e92 = $(`<div id="html_854ad3afa6f564f28ca8974ba2d39e92" style="width: 100.0%; height: 100.0%;">Bengaluru: 196 jobs</div>`)[0];
+                popup_4985df67bcdd461bb3e05d9c0c77dacb.setContent(html_854ad3afa6f564f28ca8974ba2d39e92);
+            
+        
+
+        circle_marker_7e13b21812f93bc33c3cb66e1d05ddde.bindPopup(popup_4985df67bcdd461bb3e05d9c0c77dacb)
+        ;
+
+        
+    
+    
+            var marker_6093ef0f4cb8573064279feaef6db9b1 = L.marker(
+                [12.9716, 77.5946],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_a81edcfec95313aa2f965078a51e8085 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e196\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_6093ef0f4cb8573064279feaef6db9b1.setIcon(div_icon_a81edcfec95313aa2f965078a51e8085);
+            
+    
+            var circle_marker_a246b1ef47687d8c25912a885135f553 = L.circleMarker(
+                [19.076, 72.8777],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.15, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_0e2ba0b32d404a2d1729db60fda1074d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fe8eb4f49a91ac7f4d2eab71dc31be1 = $(`<div id="html_8fe8eb4f49a91ac7f4d2eab71dc31be1" style="width: 100.0%; height: 100.0%;">Mumbai: 123 jobs</div>`)[0];
+                popup_0e2ba0b32d404a2d1729db60fda1074d.setContent(html_8fe8eb4f49a91ac7f4d2eab71dc31be1);
+            
+        
+
+        circle_marker_a246b1ef47687d8c25912a885135f553.bindPopup(popup_0e2ba0b32d404a2d1729db60fda1074d)
+        ;
+
+        
+    
+    
+            var marker_fd65bf9667aecf277faf7e68a22cc30b = L.marker(
+                [19.076, 72.8777],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_9a7f39c764755c121eee38640ef5231b = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e123\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_fd65bf9667aecf277faf7e68a22cc30b.setIcon(div_icon_9a7f39c764755c121eee38640ef5231b);
+            
+    
+            var circle_marker_681887b047d2ccc6236939637b30256b = L.circleMarker(
+                [28.4595, 77.0266],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.35, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_584191528d48a6763a734d191af7b9bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61b22cd2cb57e1d708e0e59be70fb16f = $(`<div id="html_61b22cd2cb57e1d708e0e59be70fb16f" style="width: 100.0%; height: 100.0%;">Gurugram: 67 jobs</div>`)[0];
+                popup_584191528d48a6763a734d191af7b9bd.setContent(html_61b22cd2cb57e1d708e0e59be70fb16f);
+            
+        
+
+        circle_marker_681887b047d2ccc6236939637b30256b.bindPopup(popup_584191528d48a6763a734d191af7b9bd)
+        ;
+
+        
+    
+    
+            var marker_bc67f9619117fb23df9716209afc7392 = L.marker(
+                [28.4595, 77.0266],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_231df36734620761012ab360118290a1 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e67\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_bc67f9619117fb23df9716209afc7392.setIcon(div_icon_231df36734620761012ab360118290a1);
+            
+    
+            var circle_marker_523ce1f6dbee75c615807665b81628e8 = L.circleMarker(
+                [18.5204, 73.8567],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.1, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_acf98fdd7d82e3fe869efe27921e1edf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa33b37fc09e109433f87e37261b3e04 = $(`<div id="html_fa33b37fc09e109433f87e37261b3e04" style="width: 100.0%; height: 100.0%;">Pune: 62 jobs</div>`)[0];
+                popup_acf98fdd7d82e3fe869efe27921e1edf.setContent(html_fa33b37fc09e109433f87e37261b3e04);
+            
+        
+
+        circle_marker_523ce1f6dbee75c615807665b81628e8.bindPopup(popup_acf98fdd7d82e3fe869efe27921e1edf)
+        ;
+
+        
+    
+    
+            var marker_0b75da526cf030777ce42369e7cba7e9 = L.marker(
+                [18.5204, 73.8567],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_1a87b98fe5f3a825ff10e08f8a89f930 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e62\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_0b75da526cf030777ce42369e7cba7e9.setIcon(div_icon_1a87b98fe5f3a825ff10e08f8a89f930);
+            
+    
+            var circle_marker_3ffbf47cabbf959caf6869d98c68e34e = L.circleMarker(
+                [17.385, 78.4867],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.7, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_fa1304d025832edb016bcfa3097844ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa9bff013d3df33e76c154490811dceb = $(`<div id="html_fa9bff013d3df33e76c154490811dceb" style="width: 100.0%; height: 100.0%;">Hyderabad: 54 jobs</div>`)[0];
+                popup_fa1304d025832edb016bcfa3097844ef.setContent(html_fa9bff013d3df33e76c154490811dceb);
+            
+        
+
+        circle_marker_3ffbf47cabbf959caf6869d98c68e34e.bindPopup(popup_fa1304d025832edb016bcfa3097844ef)
+        ;
+
+        
+    
+    
+            var marker_c16100257389871c4c100e7f2445e701 = L.marker(
+                [17.385, 78.4867],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_5448baecd8cf3143a0524b66558443ce = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e54\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_c16100257389871c4c100e7f2445e701.setIcon(div_icon_5448baecd8cf3143a0524b66558443ce);
+            
+    
+            var circle_marker_d9ccedc3e5c82bcce432aad2d3bd0c3b = L.circleMarker(
+                [13.0827, 80.2707],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.1, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_8646c63036e526b1024882642edc6c24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8954b7ec798bdeb83cf5b9e7d23aba1a = $(`<div id="html_8954b7ec798bdeb83cf5b9e7d23aba1a" style="width: 100.0%; height: 100.0%;">Chennai: 42 jobs</div>`)[0];
+                popup_8646c63036e526b1024882642edc6c24.setContent(html_8954b7ec798bdeb83cf5b9e7d23aba1a);
+            
+        
+
+        circle_marker_d9ccedc3e5c82bcce432aad2d3bd0c3b.bindPopup(popup_8646c63036e526b1024882642edc6c24)
+        ;
+
+        
+    
+    
+            var marker_1e42028572aa581b14891ac4eee433c6 = L.marker(
+                [13.0827, 80.2707],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_116b608fc2cd9faeecb630a675916302 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e42\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_1e42028572aa581b14891ac4eee433c6.setIcon(div_icon_116b608fc2cd9faeecb630a675916302);
+            
+    
+            var circle_marker_70ad6776d7053e7292ea87700d6899ad = L.circleMarker(
+                [28.5355, 77.391],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.55, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_f697bcdb4a3f77aa2e7b8277f5aecceb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82b8a2fbde7919391fd6e20e7b3e31f1 = $(`<div id="html_82b8a2fbde7919391fd6e20e7b3e31f1" style="width: 100.0%; height: 100.0%;">Noida: 31 jobs</div>`)[0];
+                popup_f697bcdb4a3f77aa2e7b8277f5aecceb.setContent(html_82b8a2fbde7919391fd6e20e7b3e31f1);
+            
+        
+
+        circle_marker_70ad6776d7053e7292ea87700d6899ad.bindPopup(popup_f697bcdb4a3f77aa2e7b8277f5aecceb)
+        ;
+
+        
+    
+    
+            var marker_88b124f90aa2d1d6fdf079e82e2484ae = L.marker(
+                [28.5355, 77.391],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_2c641d9c886f33b4f6e21b9ac5a652af = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e31\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_88b124f90aa2d1d6fdf079e82e2484ae.setIcon(div_icon_2c641d9c886f33b4f6e21b9ac5a652af);
+            
+    
+            var circle_marker_51dba64777ab2cc78f3b2bf9e8085a7f = L.circleMarker(
+                [20.5937, 78.9629],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_ec9c90c28ee97ec4914c502e1df68048 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c09f8b14ac4554057548ccda8a1b081a = $(`<div id="html_c09f8b14ac4554057548ccda8a1b081a" style="width: 100.0%; height: 100.0%;">India: 30 jobs</div>`)[0];
+                popup_ec9c90c28ee97ec4914c502e1df68048.setContent(html_c09f8b14ac4554057548ccda8a1b081a);
+            
+        
+
+        circle_marker_51dba64777ab2cc78f3b2bf9e8085a7f.bindPopup(popup_ec9c90c28ee97ec4914c502e1df68048)
+        ;
+
+        
+    
+    
+            var marker_6977a2dd037f52ac4b3de04efff4b696 = L.marker(
+                [20.5937, 78.9629],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_606b6d8a5506821f32b7877ef5826247 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e30\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_6977a2dd037f52ac4b3de04efff4b696.setIcon(div_icon_606b6d8a5506821f32b7877ef5826247);
+            
+    
+            var circle_marker_068237e74719f768f2667345c4d2cb83 = L.circleMarker(
+                [28.4646, 77.0299],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.25, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_c42e2cc03980398a9636cd60d964efe5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e0772e3ef57e79ca80687dcf35f2fea = $(`<div id="html_2e0772e3ef57e79ca80687dcf35f2fea" style="width: 100.0%; height: 100.0%;">Gurgaon: 25 jobs</div>`)[0];
+                popup_c42e2cc03980398a9636cd60d964efe5.setContent(html_2e0772e3ef57e79ca80687dcf35f2fea);
+            
+        
+
+        circle_marker_068237e74719f768f2667345c4d2cb83.bindPopup(popup_c42e2cc03980398a9636cd60d964efe5)
+        ;
+
+        
+    
+    
+            var marker_802f2015c58a2c849cc243972a57c3df = L.marker(
+                [28.4646, 77.0299],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_c10803a20016f6e3e7a63b284a05521a = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e25\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_802f2015c58a2c849cc243972a57c3df.setIcon(div_icon_c10803a20016f6e3e7a63b284a05521a);
+            
+    
+            var circle_marker_6c5e7388750d35576d3d5a685b2911b5 = L.circleMarker(
+                [28.7041, 77.1025],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_4e53957a2936efc08939ccc7e4d579a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb208c79bca14440b5cffd979f49c8c7 = $(`<div id="html_eb208c79bca14440b5cffd979f49c8c7" style="width: 100.0%; height: 100.0%;">Delhi: 24 jobs</div>`)[0];
+                popup_4e53957a2936efc08939ccc7e4d579a7.setContent(html_eb208c79bca14440b5cffd979f49c8c7);
+            
+        
+
+        circle_marker_6c5e7388750d35576d3d5a685b2911b5.bindPopup(popup_4e53957a2936efc08939ccc7e4d579a7)
+        ;
+
+        
+    
+    
+            var marker_d20b775a1141e6a65d4cca615c2c1b34 = L.marker(
+                [28.7041, 77.1025],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_a089501dddfde9440acb1300e5c3b126 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e24\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_d20b775a1141e6a65d4cca615c2c1b34.setIcon(div_icon_a089501dddfde9440acb1300e5c3b126);
+            
+    
+            var circle_marker_40aaa78f0810146334f2e61e12bd90e1 = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.1, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_62febdc76b50b076da10616a227239b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06262fe268ae3b97820f8df856be2cf5 = $(`<div id="html_06262fe268ae3b97820f8df856be2cf5" style="width: 100.0%; height: 100.0%;">Bangalore Urban: 22 jobs</div>`)[0];
+                popup_62febdc76b50b076da10616a227239b2.setContent(html_06262fe268ae3b97820f8df856be2cf5);
+            
+        
+
+        circle_marker_40aaa78f0810146334f2e61e12bd90e1.bindPopup(popup_62febdc76b50b076da10616a227239b2)
+        ;
+
+        
+    
+    
+            var marker_9143c125399d8e2199eb2cece1e2f72d = L.marker(
+                [12.9716, 77.5946],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_c73daaecbcf182500af145aa49234df9 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e22\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_9143c125399d8e2199eb2cece1e2f72d.setIcon(div_icon_c73daaecbcf182500af145aa49234df9);
+            
+    
+            var circle_marker_055a60b515d9aa4f3128130fcfc32a30 = L.circleMarker(
+                [23.0225, 72.5714],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.9, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_64c3f1989044e2fccbce3006f0184f18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fea24298cc12e5acdf51fae9e1e52e4f = $(`<div id="html_fea24298cc12e5acdf51fae9e1e52e4f" style="width: 100.0%; height: 100.0%;">Ahmedabad: 18 jobs</div>`)[0];
+                popup_64c3f1989044e2fccbce3006f0184f18.setContent(html_fea24298cc12e5acdf51fae9e1e52e4f);
+            
+        
+
+        circle_marker_055a60b515d9aa4f3128130fcfc32a30.bindPopup(popup_64c3f1989044e2fccbce3006f0184f18)
+        ;
+
+        
+    
+    
+            var marker_5b7671bf3e2c96067431e497a3c188c3 = L.marker(
+                [23.0225, 72.5714],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_f8b67cfa20e55aac9c1382ecc73f8d5f = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e18\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_5b7671bf3e2c96067431e497a3c188c3.setIcon(div_icon_f8b67cfa20e55aac9c1382ecc73f8d5f);
+            
+    
+            var circle_marker_9bc878683ce1002574955362f267b4fa = L.circleMarker(
+                [22.5726, 88.3639],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.7, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_02089df94e3833d5fd15a8e3a6757ee3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf0fc438f312eb64168e7e2040864222 = $(`<div id="html_bf0fc438f312eb64168e7e2040864222" style="width: 100.0%; height: 100.0%;">Greater Kolkata Area: 14 jobs</div>`)[0];
+                popup_02089df94e3833d5fd15a8e3a6757ee3.setContent(html_bf0fc438f312eb64168e7e2040864222);
+            
+        
+
+        circle_marker_9bc878683ce1002574955362f267b4fa.bindPopup(popup_02089df94e3833d5fd15a8e3a6757ee3)
+        ;
+
+        
+    
+    
+            var marker_fa1d801a83f050c0a737e100dd7d3946 = L.marker(
+                [22.5726, 88.3639],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_e68ca46b6cc294734d755fafa2adc0a0 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e14\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_fa1d801a83f050c0a737e100dd7d3946.setIcon(div_icon_e68ca46b6cc294734d755fafa2adc0a0);
+            
+    
+            var circle_marker_3ac11f8bf81e3d3f98912f47d7a08b0b = L.circleMarker(
+                [13.0213, 77.6411],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.6, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_9068f4f7ce5da4560b8c73aa73c4518f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ca47dcf6f0d08f409d919a404190a66 = $(`<div id="html_1ca47dcf6f0d08f409d919a404190a66" style="width: 100.0%; height: 100.0%;">Bengaluru East: 12 jobs</div>`)[0];
+                popup_9068f4f7ce5da4560b8c73aa73c4518f.setContent(html_1ca47dcf6f0d08f409d919a404190a66);
+            
+        
+
+        circle_marker_3ac11f8bf81e3d3f98912f47d7a08b0b.bindPopup(popup_9068f4f7ce5da4560b8c73aa73c4518f)
+        ;
+
+        
+    
+    
+            var marker_3f1dc7ea29d3aa07f52e3854457069a6 = L.marker(
+                [13.0213, 77.6411],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_c0d2e539b41433019f35791dbab34970 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e12\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_3f1dc7ea29d3aa07f52e3854457069a6.setIcon(div_icon_c0d2e539b41433019f35791dbab34970);
+            
+    
+            var circle_marker_56e4d5b99599fb634e8b293e4b4bd48d = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.55, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_0eb8c133962dcd4ba2da001a768085d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5aa053e0231ca305304723441ac2a132 = $(`<div id="html_5aa053e0231ca305304723441ac2a132" style="width: 100.0%; height: 100.0%;">Greater Bengaluru Area: 11 jobs</div>`)[0];
+                popup_0eb8c133962dcd4ba2da001a768085d9.setContent(html_5aa053e0231ca305304723441ac2a132);
+            
+        
+
+        circle_marker_56e4d5b99599fb634e8b293e4b4bd48d.bindPopup(popup_0eb8c133962dcd4ba2da001a768085d9)
+        ;
+
+        
+    
+    
+            var marker_0b3128d084d340ef26c891c38f2c8ff8 = L.marker(
+                [12.9716, 77.5946],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_9a18fb9ab4498a3ad4dc057dc8e62e19 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e11\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_0b3128d084d340ef26c891c38f2c8ff8.setIcon(div_icon_9a18fb9ab4498a3ad4dc057dc8e62e19);
+            
+    
+            var circle_marker_4609058906826b9260116f0e380ce61b = L.circleMarker(
+                [26.9124, 75.7873],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.5, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_95ffa54b0f4ddd93635fd55105470af1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c3ef5e9710cf92bddc4e27b9db0097e = $(`<div id="html_2c3ef5e9710cf92bddc4e27b9db0097e" style="width: 100.0%; height: 100.0%;">Jaipur: 10 jobs</div>`)[0];
+                popup_95ffa54b0f4ddd93635fd55105470af1.setContent(html_2c3ef5e9710cf92bddc4e27b9db0097e);
+            
+        
+
+        circle_marker_4609058906826b9260116f0e380ce61b.bindPopup(popup_95ffa54b0f4ddd93635fd55105470af1)
+        ;
+
+        
+    
+    
+            var marker_83e44f81af598e622368bf20b3170cef = L.marker(
+                [26.9124, 75.7873],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_0cc770300df45671073f33982f5bb7d5 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e10\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_83e44f81af598e622368bf20b3170cef.setIcon(div_icon_0cc770300df45671073f33982f5bb7d5);
+            
+    
+            var circle_marker_b953e5d4a91c6d3861ad55e20ecd2aa2 = L.circleMarker(
+                [19.033, 73.0297],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.5, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_2134c87b0981fdebf4c644774a04911b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd47f7c3988736bf67dc79eeabd132d9 = $(`<div id="html_cd47f7c3988736bf67dc79eeabd132d9" style="width: 100.0%; height: 100.0%;">Navi Mumbai: 10 jobs</div>`)[0];
+                popup_2134c87b0981fdebf4c644774a04911b.setContent(html_cd47f7c3988736bf67dc79eeabd132d9);
+            
+        
+
+        circle_marker_b953e5d4a91c6d3861ad55e20ecd2aa2.bindPopup(popup_2134c87b0981fdebf4c644774a04911b)
+        ;
+
+        
+    
+    
+            var marker_571d0c23c7df5cf8a5add0f1500089f6 = L.marker(
+                [19.033, 73.0297],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_782fea65bd0f3a4801647088039e615e = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e10\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_571d0c23c7df5cf8a5add0f1500089f6.setIcon(div_icon_782fea65bd0f3a4801647088039e615e);
+            
+    
+            var circle_marker_7ed665470ca41a64187b47cb5589d730 = L.circleMarker(
+                [13.0843, 77.5831],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.45, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_469653522e79978fabb31795ac3535cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3bb85f22f6e5b81747b98af6591d5cf1 = $(`<div id="html_3bb85f22f6e5b81747b98af6591d5cf1" style="width: 100.0%; height: 100.0%;">Bengaluru North: 9 jobs</div>`)[0];
+                popup_469653522e79978fabb31795ac3535cd.setContent(html_3bb85f22f6e5b81747b98af6591d5cf1);
+            
+        
+
+        circle_marker_7ed665470ca41a64187b47cb5589d730.bindPopup(popup_469653522e79978fabb31795ac3535cd)
+        ;
+
+        
+    
+    
+            var marker_e07ecf7201c39b1100176141e75ea7a5 = L.marker(
+                [13.0843, 77.5831],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_eff5b27d472f1801d26e66df30e4f533 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e9\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_e07ecf7201c39b1100176141e75ea7a5.setIcon(div_icon_eff5b27d472f1801d26e66df30e4f533);
+            
+    
+            var circle_marker_a51af691ac692bb68e12067d809821e5 = L.circleMarker(
+                [19.076, 72.8777],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.45, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_4abdf03ee3937c4ff3108e12db4bc034 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0c5e6e3f9678e5cd924e564834230c2 = $(`<div id="html_e0c5e6e3f9678e5cd924e564834230c2" style="width: 100.0%; height: 100.0%;">Mumbai Metropolitan Region: 9 jobs</div>`)[0];
+                popup_4abdf03ee3937c4ff3108e12db4bc034.setContent(html_e0c5e6e3f9678e5cd924e564834230c2);
+            
+        
+
+        circle_marker_a51af691ac692bb68e12067d809821e5.bindPopup(popup_4abdf03ee3937c4ff3108e12db4bc034)
+        ;
+
+        
+    
+    
+            var marker_c2744c89fbe14aec2a94a2aac1bf5a5f = L.marker(
+                [19.076, 72.8777],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_b5c50b5f1f20c94d041e9617ac7306b4 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e9\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_c2744c89fbe14aec2a94a2aac1bf5a5f.setIcon(div_icon_b5c50b5f1f20c94d041e9617ac7306b4);
+            
+    
+            var circle_marker_e206a6490580da23fc46e8311ef07a6e = L.circleMarker(
+                [22.7196, 75.8577],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.4, "stroke": true, "weight": 3}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+        var popup_c0212fd2c9a030ffa029df5b4fdc3775 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dcf7dda3c252ffa454fe307e27be6d6f = $(`<div id="html_dcf7dda3c252ffa454fe307e27be6d6f" style="width: 100.0%; height: 100.0%;">Indore: 8 jobs</div>`)[0];
+                popup_c0212fd2c9a030ffa029df5b4fdc3775.setContent(html_dcf7dda3c252ffa454fe307e27be6d6f);
+            
+        
+
+        circle_marker_e206a6490580da23fc46e8311ef07a6e.bindPopup(popup_c0212fd2c9a030ffa029df5b4fdc3775)
+        ;
+
+        
+    
+    
+            var marker_59e3fe0b8f7eef78a34ee03f9c9a59e5 = L.marker(
+                [22.7196, 75.8577],
+                {
+}
+            ).addTo(map_6d3329e7a20ac67bd70857195367a65a);
+        
+    
+            var div_icon_72ba598965be21c64036044f769014e7 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"font-size: 10pt; font-weight: bold; text-align: center\"\u003e8\u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+                marker_59e3fe0b8f7eef78a34ee03f9c9a59e5.setIcon(div_icon_72ba598965be21c64036044f769014e7);
+            
+</script>
+</html>
